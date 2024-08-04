@@ -1,10 +1,10 @@
 # Site settings
-title: Jekyll GitBook Theme Demo Site
-email: adam@adamrehn.com
+title: HA Mate landing page
+email: someemail@email.com
 description: Demo site for the GitBook-inspired documentation theme for Jekyll
-url: "https://adamrehn.github.io"
-baseurl: "/jekyll-theme-gitbook-demo"
-timezone: Australia/Brisbane
+url: "https://immrmkw.github.io"
+baseurl: "/HA_Mate"
+timezone: Europe/Brussels
 
 # Build settings
 #remote_theme: adamrehn/jekyll-theme-gitbook@v0.0.1
@@ -34,7 +34,7 @@ theme-settings:
   
   # Copyright settings
   copyright:
-    author: Adam Rehn
+    author: "[IMMRMKW](https://github.com/IMMRMKW)"
     license: "Licensed under the MIT License, see the file [LICENSE](https://github.com/adamrehn/jekyll-theme-gitbook-demo/blob/master/LICENSE) for details."
     year: 2020
   
@@ -61,19 +61,19 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "_collections/_chapters/first-chapter"
+      path: "_collections/_chapters/1-Installing-ESPHome"
     values:
-      chapter: "First Chapter"
+      chapter: "Installing ESPHome"
       chapnum: 1
   -
     scope:
-      path: "_collections/_chapters/second-chapter"
+      path: "_collections/_chapters/2-Ventimate"
     values:
-      chapter: "Second Chapter"
+      chapter: "Ventimate"
       chapnum: 2
   -
     scope:
-      path: "_collections/_chapters/third-chapter"
+      path: "_collections/_chapters/3-Plantmate"
     values:
-      chapter: "Third Chapter"
+      chapter: "Plantmate"
       chapnum: 3
