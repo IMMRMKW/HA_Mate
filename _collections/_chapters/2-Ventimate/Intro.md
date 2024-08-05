@@ -18,5 +18,6 @@ We spend much of our time indoors. Maintaining good air quality inside your home
    - Outdoor CO2 levels historically are around 400 ppm. However, indoor CO2 levels can increase as people gather and indoor spaces are not properly ventilated.
    - High concentrations of CO2 can lower the quality of your sleep and your concentration during the day. 
    - Proper ventilation is important to keep high CO2 concentrations at bay.
-
-
+<p align="center">
+<img src="..\assets\images\chatgpt.svg" alt="drawing" width="50%"/>
+</p>
