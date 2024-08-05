@@ -36,13 +36,13 @@ theme-settings:
   copyright:
     author: "[IMMRMKW](https://github.com/IMMRMKW)"
     license: "Licensed under the MIT License, see the file [LICENSE](https://github.com/adamrehn/jekyll-theme-gitbook-demo/blob/master/LICENSE) for details."
-    year: 2020
+    year: 2024
   
   # The collection that contains our chapters
   collection: chapters
   
   # Enable generation of links for chapter index pages
-  indices: true
+  indices: false
 
 # Configure the permalinks for each chapter
 collections_dir: _collections
