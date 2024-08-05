@@ -7,7 +7,7 @@ baseurl: "/HA_Mate"
 timezone: Europe/Brussels
 
 # Build settings
-#remote_theme: adamrehn/jekyll-theme-gitbook@v0.0.1
+remote_theme: adamrehn/jekyll-theme-gitbook@v0.0.1
 markdown: kramdown
 kramdown:
   input: GFM
@@ -16,18 +16,18 @@ sass:
   style: compressed
 
 # Only needed for local development, will be enabled automatically by GitHub Pages
-#plugins: ["jekyll-remote-theme"]
+plugins: ["jekyll-remote-theme"]
 
-host: 127.0.0.1
-# the preview server used. Leave as is.
+# host: 127.0.0.1
+# # the preview server used. Leave as is.
 
-port: 4000
-# the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
+# port: 4000
+# # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 
-highlighter: rouge
-# library used for syntax highlighting
+# highlighter: rouge
+# # library used for syntax highlighting
 
-debug: true
+
 
 # Theme settings
 theme-settings:
