@@ -2,7 +2,7 @@
 title: Intro
 pagenum: 1
 ---
-#Indoor air quality
+## Indoor air quality
 We spend much of our time indoors. Maintaining good air quality inside your home is crucial for overall health and well-being. Let's go through a few key indicators of a healthy indoor atmosphere:
 
 1. **Particulate Matter (PM):**
@@ -19,6 +19,10 @@ We spend much of our time indoors. Maintaining good air quality inside your home
    - Outdoor CO2 levels historically are around 400 ppm. However, indoor CO2 levels can increase as people gather and indoor spaces are not properly ventilated.
    - High concentrations of CO2 can lower the quality of your sleep and your concentration during the day. 
    - Proper ventilation is important to keep high CO2 concentrations at bay.
+
+## Air quality index
+
+## User experiences
 <p align="center">
 <img 
     src="..\assets\images\chatgpt.svg" 
