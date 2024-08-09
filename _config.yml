@@ -7,7 +7,7 @@ baseurl: "/HA_Mate"
 timezone: Europe/Brussels
 
 # Build settings
-remote_theme: adamrehn/jekyll-theme-gitbook@v0.0.1
+remote_theme: adamrehn/jekyll-theme-gitbook
 markdown: kramdown
 kramdown:
   input: GFM
