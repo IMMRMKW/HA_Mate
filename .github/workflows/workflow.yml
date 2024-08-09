@@ -30,8 +30,10 @@ jobs:
         with:
           node-version: '22.6.0'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Clean and install dependencies
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install
 
       - name: List node_modules/.bin
         run: ls -la node_modules/.bin
