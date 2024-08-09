@@ -29,7 +29,6 @@ jobs:
 
       - name: Clean and install dependencies
         run: |
-          rm pnpm-lock.yaml
           rm -rf .git/hooks
           rm -rf node_modules package-lock.json
           npm install
