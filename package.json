@@ -1,9 +1,5 @@
 {
-    "packageManager": "pnpm@7.1.0",
     "dependencies": {
         "sharp": "^0.33.4"
-    },
-    "scripts": {
-    "sharp": "sharp --input assets/images/Plant-database/*.jpg --resize 100x100 --output assets/images/Plant-database/thumbnails/"
-  }
+    }
 }
