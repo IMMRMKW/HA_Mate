@@ -31,7 +31,7 @@ jobs:
           node-version: '22.6.0'
 
       - name: Install dependencies
-        run: npm install sharp
+        run: npm install -g sharp
 
       - name: Check installed packages
         run: npm list -g --depth=0
