@@ -15,9 +15,6 @@ jobs:
           rubygems: latest
           bundler-cache: true
       
-      # Build the gem
-      - run: gem build jekyll-theme-gitbook.gemspec
-      
       # Publish the gem to RubyGems when a new release is tagged
       - if: startsWith(github.ref, 'refs/tags')
         run: |
