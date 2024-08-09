@@ -51,7 +51,7 @@ jobs:
       - name: Generate thumbnails
         run: |
           mkdir -p assets/images/Plant-database/thumbnails
-          ./node_modules/.bin/sharp assets/images/Plant-database/*.jpg \
+          npm run sharp assets/images/Plant-database/*.jpg \
             --resize 100x100 \
             --output assets/images/Plant-database/thumbnails/
 
