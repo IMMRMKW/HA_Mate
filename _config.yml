@@ -27,6 +27,13 @@ plugins: ["jekyll-remote-theme"]
 # highlighter: rouge
 # # library used for syntax highlighting
 
+# mini_magick:
+#     thumbnail:
+#         source: assets/images/Plant-database
+#         destination: assets/images/Plant-database/thumbnails
+#         resize: "100x100"
+#         gravity: "center"
+#         #extent: "320x240"
 
 
 # Theme settings
