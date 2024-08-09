@@ -40,7 +40,7 @@ jobs:
       #  run: npm install sharp
 
       - name: Verify sharp installation
-        run: npx sharp --version
+        run: npm run sharp --version
 
       - name: List node_modules/.bin
         run: ls -la node_modules/.bin
