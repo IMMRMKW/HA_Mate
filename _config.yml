@@ -16,7 +16,9 @@ sass:
   style: compressed
 
 # Only needed for local development, will be enabled automatically by GitHub Pages
-plugins: ["jekyll-remote-theme"]
+plugins: 
+  - jekyll-remote-theme
+  #- jekyll-thumbnail-img
 
 # host: 127.0.0.1
 # # the preview server used. Leave as is.

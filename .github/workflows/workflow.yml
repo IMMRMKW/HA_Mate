@@ -21,38 +21,6 @@ jobs:
           gem push *.gem
         env:
           GEM_HOST_API_KEY: "${{ secrets.RUBYGEMS_AUTH_TOKEN }}"
-      
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-
-      - name: Clean and install dependencies
-        run: |
-          rm -rf .git/hooks
-          rm -rf node_modules package-lock.json
-          npm install
-          npm fund
-          npm uninstall husky && npm install --save-dev husky@4
-          npm install sharp --loglevel verbose --unsafe-perm
-
-      #- name: Install sharp locally
-      #  run: npm install sharp
-
-      - name: Verify sharp installation
-        run: npx sharp --version
-          npm bin
-
-      - name: List node_modules/.bin
-        run: ls -la node_modules/.bin
-
-      - name: List sharp directory
-        run: ls -la node_modules/sharp
-
-      - name: Generate thumbnails
-        run: |
-          mkdir -p assets/images/Plant-database/thumbnails
-          npm run sharp
 
       - name: Commit and push changes
         run: |
