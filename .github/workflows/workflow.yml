@@ -2,20 +2,16 @@ name: build-gem
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
-      
-      # Clone the source code on the runner
       - uses: actions/checkout@v3
       
-      # Perform setup for Ruby 2.7
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3.4'
           rubygems: latest
           bundler-cache: true
       
-      # Publish the gem to RubyGems when a new release is tagged
       - if: startsWith(github.ref, 'refs/tags')
         run: |
           mkdir -p $HOME/.gem
@@ -24,35 +20,36 @@ jobs:
           printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
           gem push *.gem
         env:
-          GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
+          GEM_HOST_API_KEY: "${{ secrets.RUBYGEMS_AUTH_TOKEN }}"
+      
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '22.6.0'
+          node-version: '18.17.0'
 
       - name: Clean and install dependencies
         run: |
           rm -rf node_modules package-lock.json
           npm install
 
-      - name: List node_modules/.bin
-        run: ls -la node_modules/.bin
+      - name: Install sharp locally
+        run: npm install sharp
 
       - name: Verify sharp installation
         run: npx sharp --version
 
-      - name: Check installed packages
-        run: npm list -g --depth=0
+      - name: List node_modules/.bin
+        run: ls -la node_modules/.bin
+
+      - name: List sharp directory
+        run: ls -la node_modules/sharp
 
       - name: Generate thumbnails
         run: |
           mkdir -p assets/images/Plant-database/thumbnails
-          npx sharp assets/images/Plant-database/*.jpg \
+          ./node_modules/.bin/sharp assets/images/Plant-database/*.jpg \
             --resize 100x100 \
             --output assets/images/Plant-database/thumbnails/
-
-      - name: Output npm log
-        run: cat /home/runner/.npm/_logs/2024-08-09T12_56_55_056Z-debug-0.log
 
       - name: Commit and push changes
         run: |
