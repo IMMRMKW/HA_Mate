@@ -39,13 +39,13 @@ jobs:
       - name: Generate thumbnails
         run: |
           mkdir -p assets/images/Plant-database/thumbnails
-          npx sharp assets/images/Plant-database/*.jpg \
+          $(npm bin -g)/sharp assets/images/Plant-database/*.jpg \
             --resize 100x100 \
             --output assets/images/Plant-database/thumbnails/
 
       - name: Output npm log
         run: cat /home/runner/.npm/_logs/2024-08-09T12_56_55_056Z-debug-0.log
-        
+
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
