@@ -41,6 +41,7 @@ jobs:
 
       - name: Verify sharp installation
         run: npm run sharp --version
+          npm bin
 
       - name: List node_modules/.bin
         run: ls -la node_modules/.bin
