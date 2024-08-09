@@ -31,7 +31,7 @@ jobs:
           node-version: '22.6.0'
 
       - name: Install dependencies
-        run: npm install -g sharp
+        run: npm install sharp
 
       - name: Check installed packages
         run: npm list -g --depth=0
@@ -39,7 +39,7 @@ jobs:
       - name: Generate thumbnails
         run: |
           mkdir -p assets/images/Plant-database/thumbnails
-          $(npm bin -g)/sharp assets/images/Plant-database/*.jpg \
+          npx sharp assets/images/Plant-database/*.jpg \
             --resize 100x100 \
             --output assets/images/Plant-database/thumbnails/
 
