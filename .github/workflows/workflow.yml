@@ -34,7 +34,7 @@ jobs:
           npm install
           npm fund
           npm uninstall husky && npm install --save-dev husky@4
-          npm install sharp --loglevel verbose
+          npm install sharp --loglevel verbose --unsafe-perm
 
       #- name: Install sharp locally
       #  run: npm install sharp
