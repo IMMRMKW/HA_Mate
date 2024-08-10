@@ -22,15 +22,15 @@ jobs:
         env:
           GEM_HOST_API_KEY: "${{ secrets.RUBYGEMS_AUTH_TOKEN }}"
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add assets/images/Plant-database/thumbnails
-          git commit -m 'Generate thumbnails'
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Commit and push changes
+      #   run: |
+      #     git config --global user.name 'github-actions[bot]'
+      #     git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      #     git add assets/images/Plant-database/thumbnails
+      #     git commit -m 'Generate thumbnails'
+      #     git push
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   generate_thumbnails:
     name: Generate thumbnails
     runs-on: ubuntu-latest
