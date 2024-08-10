@@ -42,8 +42,8 @@ jobs:
         id: images
         uses: subic/ghaction-thumbnails@v1.1 # Tag number optional, breaking changes not expected.
         with: # Arguments:
-          source: 'images' # REQUIRED
-          output: 'thumbnails' # REQUIRED
+          source: 'assets/images/Plant-database' # REQUIRED
+          output: 'assets/images/Plant-database/thumbnails' # REQUIRED
           sizes: 100 # REQUIRED
           extensions: 'jpg, jpeg, png, webp, gif, tiff'
           subfolder: '%D'
