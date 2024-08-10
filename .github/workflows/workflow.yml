@@ -60,3 +60,5 @@ jobs:
           git add "./${{steps.images.outputs.thumbnails}}" || exit 0
           git commit -m "[skip ci] Auto-generated missing thumbnails" -a || exit 0
           git push -f -q https://${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
