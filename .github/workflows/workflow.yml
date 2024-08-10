@@ -44,7 +44,7 @@ jobs:
         with: # Arguments:
           source: 'assets/images/Plant-database' # REQUIRED
           output: 'assets/images/Plant-database/thumbnails' # REQUIRED
-          sizes: 100 # REQUIRED
+          sizes: 100,300 # REQUIRED
           extensions: 'jpg, jpeg, png, webp, gif, tiff'
           subfolder: '%D'
           filename: '%F'
