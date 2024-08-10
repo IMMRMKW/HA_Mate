@@ -37,7 +37,8 @@ plugins:
 #         gravity: "center"
 #         #extent: "320x240"
 
-
+include:
+  - assets
 # Theme settings
 theme-settings:
   

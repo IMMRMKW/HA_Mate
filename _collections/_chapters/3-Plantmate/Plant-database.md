@@ -67,9 +67,9 @@ pagenum: 4
 <img 
     src="..\assets\images\Plant-database\Maranta_Leuconeura.png"
     alt="Maranta Leuconeura" 
-    sizes="(max-width: 600px) 100vw, 
-            50vw" 
-    style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; width: 100px"/>
+    sizes="(max-width: 600px) 50px, 
+            300px" 
+    style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;"/>
 </td>
 <td> Bought as 'miniplant' in Intratuin. </td>
 </tr>
@@ -113,8 +113,8 @@ pagenum: 4
 <td> Bought as 'miniplant' in Intratuin. </td>
 </tr>
 
-
-
+[image](D:\github\HA_Mate\assets\images\Plant-database\Anthurium_Lilly.png)
+![a markdown image](/assets/Scindapsus_pictus_Trebie.png)
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
