@@ -31,15 +31,6 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-name: Generate thumbnails
-on:
-  push:
-    branches:
-      - master
-    paths:
-      - 'assets/images/Plant-database/*' # Only run on this path changes
-jobs:
   generate_thumbnails:
     name: Generate thumbnails
     runs-on: ubuntu-latest
