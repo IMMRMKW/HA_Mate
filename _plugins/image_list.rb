@@ -6,7 +6,7 @@ require 'fastimage'
 
 module Jekyll
   class GenerateImageList < Generator
-    priority :lowest  # Ensure this generator runs last
+    priority :highest  # Ensure this generator runs last
 
     def generate(site)
       base_dir = File.join(site.source, 'assets/images/Plant-database')
