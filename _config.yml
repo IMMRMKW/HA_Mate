@@ -18,8 +18,6 @@ sass:
 # Only needed for local development, will be enabled automatically by GitHub Pages
 plugins: 
   - jekyll-remote-theme
-  - image-list
-  - image_tag
 
 keep_files: [image_list.json]
   #- jekyll-thumbnail-img
