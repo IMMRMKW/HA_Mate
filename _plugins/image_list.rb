@@ -1,0 +1,67 @@
+require 'jekyll'
+require 'find'
+require 'pathname'
+require 'json'
+require 'fastimage'
+
+module Jekyll
+  class GenerateImageList < Generator
+    priority :lowest  # Ensure this generator runs last
+
+    def generate(site)
+      base_dir = File.join(site.source, 'assets/images/Plant-database')
+      image_list = {}
+
+      Find.find(base_dir) do |path|
+        if File.file?(path)
+          width, height = FastImage.size(path)
+          relative_path = Pathname.new(path).relative_path_from(Pathname.new(site.source)).to_s
+          relative_path = File.join('../', relative_path)
+          file_name = File.basename(path)
+
+          image_list[file_name] ||= []
+          image_list[file_name] << { width: width, height: height, path: relative_path }
+        end
+      end
+
+      output_dir = site.dest  # Write to the root of the _site directory
+      File.write(File.join(output_dir, 'image_list.json'), JSON.pretty_generate(image_list))
+    end
+  end
+end
+
+
+# require 'jekyll'
+# require 'find'
+# require 'pathname'
+# require 'json'
+# require 'github-pages'
+# require 'fastimage'
+
+# module Jekyll
+#   class GenerateImageList < Generator
+#     priority :lowest  # Ensure this generator runs last
+
+#     def generate(site)
+#       base_dir = File.join(site.source, 'assets/images/Plant-database')
+#       image_list = {}
+
+#       Find.find(base_dir) do |path|
+#         if File.file?(path)
+#           width, height = FastImage.size(path)
+#           relative_path = Pathname.new(path).relative_path_from(Pathname.new(site.source)).to_s
+#           relative_path = File.join('../', relative_path)
+#           file_name = File.basename(path)
+
+#           image_list[file_name] ||= {}
+#           image_list[file_name][width] ||= []
+#           image_list[file_name][width] << relative_path
+#         end
+#       end
+
+#       output_dir = site.dest  # Write to the root of the _site directory
+#       File.write(File.join(output_dir, 'image_list.json'), JSON.pretty_generate(image_list))
+#     end
+#   end
+# end
+

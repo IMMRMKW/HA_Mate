@@ -18,6 +18,8 @@ sass:
 # Only needed for local development, will be enabled automatically by GitHub Pages
 plugins: 
   - jekyll-remote-theme
+
+keep_files: [image_list.json]
   #- jekyll-thumbnail-img
 
 # host: 127.0.0.1
