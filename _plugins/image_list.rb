@@ -25,22 +25,19 @@ module Jekyll
       end
 
       output_dir = site.dest  # Write to the root of the _site directory
-      File.write(File.join(output_dir, 'image_list.json'), JSON.pretty_generate(image_list))
+      output_file = File.join(output_dir, 'image_list.json')
+
+      # Ensure the directory exists
+      FileUtils.mkdir_p(File.dirname(output_file))
+
+      File.write(output_file, JSON.pretty_generate(image_list))
     end
   end
 end
 
-
-# require 'jekyll'
-# require 'find'
-# require 'pathname'
-# require 'json'
-# require 'github-pages'
-# require 'fastimage'
-
 # module Jekyll
 #   class GenerateImageList < Generator
-#     priority :lowest  # Ensure this generator runs last
+#     priority :highest  # Ensure this generator runs last
 
 #     def generate(site)
 #       base_dir = File.join(site.source, 'assets/images/Plant-database')
@@ -53,9 +50,8 @@ end
 #           relative_path = File.join('../', relative_path)
 #           file_name = File.basename(path)
 
-#           image_list[file_name] ||= {}
-#           image_list[file_name][width] ||= []
-#           image_list[file_name][width] << relative_path
+#           image_list[file_name] ||= []
+#           image_list[file_name] << { width: width, height: height, path: relative_path }
 #         end
 #       end
 
@@ -64,4 +60,7 @@ end
 #     end
 #   end
 # end
+
+
+
 
