@@ -28,9 +28,12 @@ module Jekyll
       output_file = File.join(output_dir, 'image_list.json')
 
       # Ensure the directory exists
-      #FileUtils.mkdir_p(File.dirname(output_file))
+      FileUtils.mkdir_p(File.dirname(output_file))
 
       File.write(output_file, JSON.pretty_generate(image_list))
+
+      # Register the file as a static file
+      site.static_files << Jekyll::StaticFile.new(site, site.source, '', 'image_list.json')
     end
   end
 end
