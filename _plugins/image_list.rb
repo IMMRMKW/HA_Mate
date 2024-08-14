@@ -24,16 +24,15 @@ module Jekyll
         end
       end
 
-      output_dir = site.dest  # Write to the root of the _site directory
-      output_file = File.join(output_dir, 'image_list.json')
+      # Use the project folder as the base directory
+      project_folder = site.source
+      output_file = File.join(project_folder, 'assets', 'image_list.json')
 
       # Ensure the directory exists
       FileUtils.mkdir_p(File.dirname(output_file))
 
       File.write(output_file, JSON.pretty_generate(image_list))
-
-      # Register the file as a static file
-      site.static_files << Jekyll::StaticFile.new(site, site.source, '', 'image_list.json')
+      site.static_files << Jekyll::StaticFile.new(site, site.source, 'assets', 'image_list.json')
     end
   end
 end
