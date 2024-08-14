@@ -86,7 +86,7 @@ module Jekyll
 
         async function findFittingImage(fileName, screenWidth, screenHeight) {
             try {
-                fetch('path/to/your/file.json')
+                fetch('/image_list.json')
                 .then(response => response.json())
                 .then(data => console.log(data))
                 .catch(error => console.error('Error fetching JSON:', error));
