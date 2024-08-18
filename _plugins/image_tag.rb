@@ -71,25 +71,24 @@ module Jekyll
       </div>
 
       <script>
-        function openModal(modalId, initialPath) {
+        async function openModal(modalId, initialPath) {
           var modal = document.getElementById(modalId);
           var imgElement = document.getElementById('img_' + modalId);
           const screenWidth = window.innerWidth;
-            const screenHeight = window.innerHeight;
-            let fileName = initialPath.split('/').pop();
-            findFittingImage(fileName, screenWidth, screenHeight).then(imagePath => {
-                imgElement.src = imagePath;
-                console.log(imagePath);
-            });
-          modal.style.display = 'flex';
+          const screenHeight = window.innerHeight;
+          let fileName = initialPath.split('/').pop();
+          let imagePath = await findFittingImage(fileName, screenWidth, screenHeight);
+          if (imagePath) {
+            imgElement.src = imagePath;
+            console.log(imagePath);
+            modal.style.display = 'flex';
+          } else {
+            console.error("No fitting image found");
+          }
         }
 
         async function findFittingImage(fileName, screenWidth, screenHeight) {
             try {
-                fetch('../assets/image_list.json')
-                .then(response => response.json())
-                .then(data => console.log(data))
-                .catch(error => console.error('Error fetching JSON:', error));
                 const response = await fetch('../assets/image_list.json');
                 if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);

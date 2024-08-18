@@ -19,8 +19,6 @@ sass:
 plugins: 
   - jekyll-remote-theme
 
-keep_files: [image_list.json]
-  #- jekyll-thumbnail-img
 
 # host: 127.0.0.1
 # # the preview server used. Leave as is.

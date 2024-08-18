@@ -62,10 +62,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
   generate_thumbnails:
     name: Generate thumbnails
     runs-on: ubuntu-latest
     timeout-minutes: 10 # Should be enough for all runs, GH default is 360 which is unreasonable...
+    strategy:
+      matrix:
+        folder: ['assets/images/Plant-database']
     steps:
       - name: Checkout repository # Check out the repo to access the input image folder.
         uses: actions/checkout@master
@@ -73,9 +77,9 @@ jobs:
         id: images
         uses: subic/ghaction-thumbnails@v1.1 # Tag number optional, breaking changes not expected.
         with: # Arguments:
-          source: 'assets/images/Plant-database' # REQUIRED
-          output: 'assets/images/Plant-database/thumbnails' # REQUIRED
-          sizes: 100,300 # REQUIRED
+          source: ${{ matrix.folder }} # REQUIRED
+          output: ${{ matrix.folder }}/thumbnails # REQUIRED
+          sizes: 100,300,500,750 # REQUIRED
           extensions: 'jpg, jpeg, png, webp, gif, tiff'
           subfolder: '%D'
           filename: '%F'
