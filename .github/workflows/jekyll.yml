@@ -87,7 +87,10 @@ jobs:
           position: 'centre'
           enlarge: 'true'
           overwrite: 'false'
-      - name: Commit thumbnail folder # This step will commit generated files, remove if not used as a single purpose workflow. Will exit gracefully if no changes are found.
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Commit thumbnail folder
         run: |
           echo "Committing folder ${{steps.images.outputs.thumbnails}}"
           git config --local user.name "${{github.actor}}"
@@ -97,3 +100,13 @@ jobs:
           git push -f -q https://${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Commit thumbnail folder # This step will commit generated files, remove if not used as a single purpose workflow. Will exit gracefully if no changes are found.
+      #   run: |
+      #     echo "Committing folder ${{steps.images.outputs.thumbnails}}"
+      #     git config --local user.name "${{github.actor}}"
+      #     git config --local user.email "${{github.actor}}@users.noreply.github.com"
+      #     git add "./${{steps.images.outputs.thumbnails}}" || exit 0
+      #     git commit -m "[skip ci] Auto-generated missing thumbnails" -a || exit 0
+      #     git push -f -q https://${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
