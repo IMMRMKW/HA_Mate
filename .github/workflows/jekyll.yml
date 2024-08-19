@@ -64,6 +64,8 @@ jobs:
         uses: actions/deploy-pages@v4
 
   generate_thumbnails:
+    permissions:
+      contents: write
     name: Generate thumbnails
     runs-on: ubuntu-latest
     timeout-minutes: 10
