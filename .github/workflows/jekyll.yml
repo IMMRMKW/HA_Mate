@@ -63,7 +63,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  generate_thumbnails:
+generate_thumbnails:
   name: Generate thumbnails
   runs-on: ubuntu-latest
   timeout-minutes: 10
