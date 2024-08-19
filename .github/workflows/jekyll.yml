@@ -87,10 +87,10 @@ jobs:
           position: 'centre'
           enlarge: 'true'
           overwrite: 'false'
-      - name: Checkout repository again
-        uses: actions/checkout@v2
-        with:
-          ref: main
+      # - name: Checkout repository again
+      #   uses: actions/checkout@v2
+      #   with:
+      #     ref: main
       - name: Debug - List directory contents
         run: ls -R ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails
       - name: Commit thumbnail folder
