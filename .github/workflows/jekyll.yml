@@ -87,10 +87,6 @@ jobs:
           position: 'centre'
           enlarge: 'true'
           overwrite: 'false'
-      # - name: Checkout repository again
-      #   uses: actions/checkout@v2
-      #   with:
-      #     ref: main
       - name: Debug - List directory contents
         run: ls -R ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails
       - name: Commit thumbnail folder
@@ -98,12 +94,13 @@ jobs:
           echo "Committing folder ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails"
           git config --local user.name "${{github.actor}}"
           git config --local user.email "${{github.actor}}@users.noreply.github.com"
-          git add . #git add "${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails" || exit 0
+          git add "${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails" || exit 0
           git status
           git commit -m "[skip ci] Auto-generated missing thumbnails" -a || exit 0
-          git push -f -q https://${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}
+          git push -f -q https://${{secrets.PAT_TOKEN}}@github.com/${{github.repository}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
       # - name: Commit thumbnail folder # This step will commit generated files, remove if not used as a single purpose workflow. Will exit gracefully if no changes are found.
       #   run: |
