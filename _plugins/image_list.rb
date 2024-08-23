@@ -9,7 +9,7 @@ module Jekyll
     priority :lowest  # Ensure this generator runs last
 
     def generate(site)
-      base_dir = File.join(site.source, 'assets/images/Plant-database')
+      base_dir = File.join(site.source, 'assets/images')
       image_list = {}
 
       Find.find(base_dir) do |path|
