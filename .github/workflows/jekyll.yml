@@ -47,6 +47,17 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Commit image_list.json
+        run: |
+          echo "Committing folder ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails"
+          git config --local user.name "${{github.actor}}"
+          git config --local user.email "${{github.actor}}@users.noreply.github.com"
+          git add "${GITHUB_WORKSPACE}/assets/image_list.json" || exit 0
+          git status
+          git commit -m "updated image_list.json" -a || exit 0
+          git push -f -q https://${{secrets.PAT_TOKEN}}@github.com/${{github.repository}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
