@@ -111,7 +111,7 @@ jobs:
       - name: Save thumbnails to artifact
         uses: actions/upload-artifact@v2
         with:
-          name: thumbnails-${{ matrix.folder//\//- }}
+          name: thumbnails-${{ matrix.folder | replace('/', '-') }}
           path: ${{ matrix.folder }}/thumbnails
 
     # New job to commit all thumbnails after matrix jobs are done
