@@ -1,16 +1,34 @@
+require 'liquid'
+require 'json'
+
+# Define the custom tag
 module Jekyll
-  class ImageTag < Liquid::Tag
+    class ImageTag < Liquid::Tag
     def initialize(tag_name, markup, tokens)
-      super
-      @filepath, @alt_text = markup.split(',').map(&:strip)
+        super
+        @json_file, @image_name, @alt_text, @view_width_desktop, @view_width_mobile = markup.strip.split(',').map(&:strip)
+        @max_width = @max_width.to_i
     end
 
     def render(context)
-    modal_id = "modal_#{@filepath.hash.abs}"
-    filename = File.basename(@filepath)
-    alt_text = @alt_text.gsub('"', '&quot;')  # Escape double quotes in alt text
-    <<~HTML
-      <style>
+        modal_id = "modal_#{@image_name.hash.abs}"
+        # Get the absolute path to the JSON file
+        site_source = context.registers[:site].source
+        json_file_path = File.join(site_source, @json_file.gsub('../', ''))
+
+        # Read and parse the JSON file
+        json_data = JSON.parse(File.read(json_file_path))
+
+        # Find the image data for the specified image name
+        image_data = json_data[@image_name]
+
+        # Generate the srcset attribute
+        srcset = image_data.map { |img| "#{img['path']} #{img['width']}w" }.join(', ')
+        # Get the largest image for the src attribute
+        largest_image = image_data.max_by { |img| img['width'] }
+        puts "largest_image: #{largest_image['path']}"
+        html = <<-HTML
+              <style>
         .modal {
           display: none;
           position: fixed;
@@ -56,68 +74,71 @@ module Jekyll
           cursor: pointer;
         }
       </style>
-      <img 
-        src="#{@filepath}"
-        srcset="#{@filepath.gsub('300', '100')} 100w, 
-                #{@filepath} 300w"
-        sizes="(max-width: 600px) 100px, 300px"
-        alt="#{alt_text}"
-        style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; cursor: pointer;"
-        onclick="openModal('#{modal_id}', '#{@filepath}')"/>
+        <img 
+            src="#{largest_image['path']}"
+            srcset="#{srcset}"
+            sizes="(max-width: 600px) #{@view_width_mobile}vw, #{@view_width_desktop}vw"
+            alt="#{@alt_text}"
+            style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; cursor: pointer;"
+            onclick="openModal('#{modal_id}', '#{@image_name}')"/>
 
-      <div id="#{modal_id}" class="modal" onclick="this.style.display='none'">
-        <span class="close" onclick="document.getElementById('#{modal_id}').style.display='none'">&times;</span>
-        <img class="modal-content" id="img_#{modal_id}" src="#{@filepath}" onclick="event.stopPropagation()">
-      </div>
+        <div id="#{modal_id}" class="modal" onclick="this.style.display='none'">
+            <span class="close" onclick="document.getElementById('#{modal_id}').style.display='none'">&times;</span>
+            <img class="modal-content" id="img_#{modal_id}" src="#{largest_image['path']}" onclick="event.stopPropagation()">
+        </div>
 
-      <script>
-        async function openModal(modalId, initialPath) {
-          var modal = document.getElementById(modalId);
-          var imgElement = document.getElementById('img_' + modalId);
-          const screenWidth = window.innerWidth;
-          const screenHeight = window.innerHeight;
-          let fileName = initialPath.split('/').pop();
-          let imagePath = await findFittingImage(fileName, screenWidth, screenHeight);
-          if (imagePath) {
-            imgElement.src = imagePath;
-            console.log(imagePath);
-            modal.style.display = 'flex';
-          } else {
-            console.error("No fitting image found");
-          }
-        }
+        <script>
+            async function openModal(modalId, initialPath) {
+            var modal = document.getElementById(modalId);
+            var imgElement = document.getElementById('img_' + modalId);
+            const screenWidth = window.innerWidth;
+            const screenHeight = window.innerHeight;
+            let fileName = initialPath.split('/').pop();
+            let imagePath = await findFittingImage(fileName, screenWidth, screenHeight);
+            if (imagePath) {
+                console.log(imagePath);
+                imgElement.src = imagePath;
+                modal.style.display = 'flex';
+            } else {
+                console.error("No fitting image found");
+            }
+            }
 
-        async function findFittingImage(fileName, screenWidth, screenHeight) {
-            try {
-                const response = await fetch('../assets/image_list.json');
-                if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                const images = await response.json();
-
-                if (!images[fileName]) {
-                return null;
-                }
-
-                let fittingImage = null;
-                images[fileName].forEach(image => {
-                if (image.width <= screenWidth && image.height <= screenHeight) {
-                    if (!fittingImage || (image.width > fittingImage.width && image.height > fittingImage.height)) {
-                    fittingImage = image;
+            async function findFittingImage(fileName, screenWidth, screenHeight) {
+                try {
+                    const response = await fetch('#{@json_file}');
+                    if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
                     }
-                }
-                });
+                    const images = await response.json();
 
-                return fittingImage ? fittingImage.path : null;
-            } catch (error) {
-                console.error("Unable to fetch data:", error);
-                return null;
-            }
-            }
-      </script>
-    HTML
-  end
-  end
+                    if (!images[fileName]) {
+                    return null;
+                    }
+
+                    let fittingImage = null;
+                    images[fileName].forEach(image => {
+                    if (image.width <= screenWidth && image.height <= screenHeight) {
+                        if (!fittingImage || (image.width > fittingImage.width && image.height > fittingImage.height)) {
+                        fittingImage = image;
+                        }
+                    }
+                    });
+
+                    return fittingImage ? fittingImage.path : null;
+                } catch (error) {
+                    console.error("Unable to fetch data:", error);
+                    return null;
+                }
+                }
+        </script>
+        HTML
+
+        html
+    end
+    end
 end
 
+# Register the custom tag with Liquid
 Liquid::Template.register_tag('image_tag', Jekyll::ImageTag)
+
