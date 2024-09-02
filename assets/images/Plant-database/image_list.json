@@ -214,5 +214,37 @@
       "height": 780,
       "path": "../assets/images/Plant-database/thumbnails/750/Scindapsus_pictus_Trebie.png"
     }
+  ],
+  "image_list.json": [
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/thumbnails/100/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/thumbnails/300/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/thumbnails/500/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/thumbnails/750/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/thumbnails/image_list.json"
+    }
   ]
 }
