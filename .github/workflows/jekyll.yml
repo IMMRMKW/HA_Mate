@@ -101,67 +101,19 @@ jobs:
           enlarge: 'true'
           overwrite: 'false'
 
-      - name: Debug - List directory contents
-        run: ls -R ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails
-
-      - name: Set Artifact Name
-        run: echo "artifact_name=thumbnails-$(echo ${{ matrix.folder }} | tr '/' '_')" >> $GITHUB_ENV
-
-      - name: Upload Thumbnails
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ env.artifact_name }}
-          path: ${{ matrix.folder }}/thumbnails
-
-  commit-thumbnails:
-    runs-on: ubuntu-latest
-    needs: generate-thumbnails
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      # - name: Authenticate GitHub CLI
-      #   run: echo "${{ secrets.GH_TOKEN }}" | gh auth login --with-token
-
-      - name: List Artifacts
-        id: list-artifacts
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const artifacts = await github.rest.actions.listArtifactsForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo
-            });
-            const filteredArtifacts = artifacts.data.artifacts.filter(artifact => artifact.name.startsWith('thumbnails-'));
-            const artifactNames = filteredArtifacts.map(artifact => artifact.name);
-            return artifactNames.join('\n');
-        env:
-          ARTIFACT_NAMES: ${{ steps.list-artifacts.outputs.result }}
-
-      - name: Download Artifacts
-        run: |
-          for artifact in ${{ env.artifacts }}; do
-            folder_name=$(echo $artifact | cut -d'-' -f2- | tr '_' '/')
-            echo "Downloading $artifact to $folder_name"
-            mkdir -p $folder_name
-            gh run download --name $artifact --dir $folder_name
-          done
-
-      - name: Debug - List directory contents
-        run: ls -R ${GITHUB_WORKSPACE}
-
       - name: Commit thumbnail folder
         run: |
           echo "Committing folder thumbnails"
           git config --local user.name "${{github.actor}}"
           git config --local user.email "${{github.actor}}@users.noreply.github.com"
-          git add assets/images/Plant-database/thumbnails assets/images/Ventimate/Tutorial/thumbnails || exit 0
+          git add "${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails" || exit 0
           git status
-          git commit -m "[skip ci] Auto-generated missing thumbnails" -a || exit 0
+          git commit -m "Auto-generated missing thumbnails ${{ matrix.folder }}" -a || exit 0
           git push -f -q https://${{secrets.PAT_TOKEN}}@github.com/${{github.repository}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  # generate_thumbnails:
+
+    # generate_thumbnails:
   #   permissions:
   #     contents: write
   #   name: Generate thumbnails
