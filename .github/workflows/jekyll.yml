@@ -110,36 +110,23 @@ jobs:
       - name: Upload Thumbnails
         uses: actions/upload-artifact@v2
         with:
-          name: thumbnails-step-${{ env.STEP_NUMBER }}
+          name: thumbnails
           path: ${{ matrix.folder }}/thumbnails
 
   commit-thumbnails:
     runs-on: ubuntu-latest
     needs: generate-thumbnails
+       runs-on: ubuntu-latest
+    needs: build
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: List Artifacts
-        id: list-artifacts
-        run: |
-          echo "Listing artifacts"
-          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-               -H "Accept: application/vnd.github.v3+json" \
-               https://api.github.com/repos/${{ github.repository }}/actions/artifacts > artifacts.json
-          cat artifacts.json
-
-      - name: Download Artifacts
-        run: |
-          echo "Downloading artifacts"
-          for artifact in $(jq -r '.artifacts[].name' artifacts.json); do
-            echo "Downloading $artifact"
-            curl -L -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-                 -H "Accept: application/vnd.github.v3+json" \
-                 https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$(jq -r ".artifacts[] | select(.name==\"$artifact\") | .id" artifacts.json)/zip \
-                 -o $artifact.zip
-            unzip -o $artifact.zip -d .
-          done
+      - name: Download Thumbnails
+        uses: actions/download-artifact@v2
+        with:
+          name: thumbnails
+          path: ./downloaded-thumbnails
 
       - name: Commit thumbnail folder
         run: |
