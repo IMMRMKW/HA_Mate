@@ -76,20 +76,13 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  generate_thumbnails:
-    permissions:
-      contents: write
-    name: Generate thumbnails
+  generate-thumbnails:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     strategy:
       matrix:
-        folder: ['assets/images/Plant-database',
-                  'assets/images/Ventimate/Tutorial']
+        folder: ['assets/images/Plant-database', 'assets/images/Ventimate/Tutorial']
     steps:
-      - name: Set up environment
-        run: echo "CLEAN_FOLDER=${{ matrix.folder//\//- }}" >> $GITHUB_ENV
-
       - name: Checkout repository
         uses: actions/checkout@v2
 
@@ -111,32 +104,19 @@ jobs:
       - name: Debug - List directory contents
         run: ls -R ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails
 
-      - name: Save thumbnails to artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: thumbnails-${{ env.CLEAN_FOLDER }}
-          path: ${{ matrix.folder }}/thumbnails
-
-    # New job to commit all thumbnails after matrix jobs are done
-  commit_thumbnails:
-    needs: generate_thumbnails
+  commit-thumbnails:
     runs-on: ubuntu-latest
+    needs: generate-thumbnails
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Download all thumbnails
-        uses: actions/download-artifact@v2
-        with:
-          name: thumbnails-${{ matrix.folder }}
-          path: .
-
-      - name: Commit thumbnail folders
+      - name: Commit thumbnail folder
         run: |
-          echo "Committing all thumbnail folders"
+          echo "Committing folder ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails"
           git config --local user.name "${{github.actor}}"
           git config --local user.email "${{github.actor}}@users.noreply.github.com"
-          git add assets/images/Plant-database/thumbnails assets/images/Ventimate/Tutorial/thumbnails || exit 0
+          git add "${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails" || exit 0
           git status
           git commit -m "[skip ci] Auto-generated missing thumbnails" -a || exit 0
           git push -f -q https://${{secrets.PAT_TOKEN}}@github.com/${{github.repository}}
