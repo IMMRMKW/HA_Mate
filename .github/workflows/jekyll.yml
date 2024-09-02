@@ -123,6 +123,9 @@ jobs:
           name: thumbnails
           path: .
 
+      - name: Debug - List directory contents
+        run: ls -R ${GITHUB_WORKSPACE}/$
+
       - name: Commit thumbnail folder
         run: |
           echo "Committing folder thumbnails"
