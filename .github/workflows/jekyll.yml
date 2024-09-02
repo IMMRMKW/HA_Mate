@@ -124,7 +124,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: thumbnails
-          path: ./downloaded-thumbnails
+          path: ./
+
+      - name: Debug - List directory contents
+        run: ls -R ${GITHUB_WORKSPACE}
 
       - name: Commit thumbnail folder
         run: |
