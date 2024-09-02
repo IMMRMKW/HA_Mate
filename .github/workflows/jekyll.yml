@@ -104,10 +104,13 @@ jobs:
       - name: Debug - List directory contents
         run: ls -R ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails
 
+      - name: Set Step Number
+        run: echo "STEP_NUMBER=${{ steps.images.outputs.step_number }}" >> $GITHUB_ENV
+
       - name: Upload Thumbnails
         uses: actions/upload-artifact@v2
         with:
-          name: thumbnails-${{ matrix.folder }}
+          name: thumbnails-step-${{ env.STEP_NUMBER }}
           path: ${{ matrix.folder }}/thumbnails
 
   commit-thumbnails:
