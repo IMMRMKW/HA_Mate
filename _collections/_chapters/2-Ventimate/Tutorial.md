@@ -7,4 +7,6 @@ pagenum: 3
 ### Steps
 <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
 <script>eruda.init();</script>
-{% image_tag ../assets/images/Ventimate/Tutorial/image_list.json, 3-overview_parts.jpg, overview parts, 25, 50 %}
+{% image_tag ../assets/images/Ventimate/Tutorial/image_list.json, 3-overview_parts.jpg, overview parts, 25, 90 %}
+
+{% image_tag ../assets/images/Ventimate/Tutorial/image_list.json, 4-remaining_cuts.jpg, remaining cuts, 25, 90 %}
