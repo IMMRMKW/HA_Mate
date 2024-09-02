@@ -78,6 +78,8 @@ jobs:
 
   generate-thumbnails:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     timeout-minutes: 10
     strategy:
       matrix:
