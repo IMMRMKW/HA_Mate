@@ -104,13 +104,13 @@ jobs:
       - name: Debug - List directory contents
         run: ls -R ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails
 
-      - name: Set Step Number
-        run: echo "STEP_NUMBER=${{ steps.images.outputs.step_number }}" >> $GITHUB_ENV
+      - name: Set Artifact Name
+        run: echo "artifact_name=thumbnails-$(echo ${{ matrix.folder }} | tr '/' '_')" >> $GITHUB_ENV
 
       - name: Upload Thumbnails
         uses: actions/upload-artifact@v4
         with:
-          name: thumbnails
+          name: ${{ env.artifact_name }}
           path: ${{ matrix.folder }}/thumbnails
 
   commit-thumbnails:
@@ -120,11 +120,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Download Thumbnails
-        uses: actions/download-artifact@v2
-        with:
-          name: thumbnails
-          path: ./
+      - name: List Artifacts
+        id: list-artifacts
+        run: |
+          artifacts=$(gh api -X GET /repos/${{ github.repository }}/actions/artifacts | jq -r '.artifacts[] | select(.name | startswith("thumbnails-")) | .name')
+          echo "artifacts=$artifacts" >> $GITHUB_ENV
+
+      - name: Download Artifacts
+        run: |
+          for artifact in ${{ env.artifacts }}; do
+            folder_name=$(echo $artifact | cut -d'-' -f2- | tr '_' '/')
+            echo "Downloading $artifact to $folder_name"
+            mkdir -p $folder_name
+            gh run download --name $artifact --dir $folder_name
+          done
 
       - name: Debug - List directory contents
         run: ls -R ${GITHUB_WORKSPACE}
