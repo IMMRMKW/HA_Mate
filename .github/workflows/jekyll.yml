@@ -116,7 +116,7 @@ jobs:
   commit-thumbnails:
     runs-on: ubuntu-latest
     needs: generate-thumbnails
-       runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Checkout code
