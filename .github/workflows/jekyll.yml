@@ -107,7 +107,7 @@ jobs:
       - name: Upload Thumbnails
         uses: actions/upload-artifact@v2
         with:
-          name: thumbnails
+          name: thumbnails-${{ matrix.folder }}
           path: ${{ matrix.folder }}/thumbnails
 
   commit-thumbnails:
@@ -117,21 +117,33 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Download Thumbnails
-        uses: actions/download-artifact@v2
-        with:
-          name: thumbnails
-          path: .
+      - name: List Artifacts
+        id: list-artifacts
+        run: |
+          echo "Listing artifacts"
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               https://api.github.com/repos/${{ github.repository }}/actions/artifacts > artifacts.json
+          cat artifacts.json
 
-      - name: Debug - List directory contents
-        run: ls -R ${GITHUB_WORKSPACE}/
+      - name: Download Artifacts
+        run: |
+          echo "Downloading artifacts"
+          for artifact in $(jq -r '.artifacts[].name' artifacts.json); do
+            echo "Downloading $artifact"
+            curl -L -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                 -H "Accept: application/vnd.github.v3+json" \
+                 https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$(jq -r ".artifacts[] | select(.name==\"$artifact\") | .id" artifacts.json)/zip \
+                 -o $artifact.zip
+            unzip -o $artifact.zip -d .
+          done
 
       - name: Commit thumbnail folder
         run: |
           echo "Committing folder thumbnails"
           git config --local user.name "${{github.actor}}"
           git config --local user.email "${{github.actor}}@users.noreply.github.com"
-          git add thumbnails || exit 0
+          git add assets/images/Plant-database/thumbnails assets/images/Ventimate/Tutorial/thumbnails || exit 0
           git status
           git commit -m "[skip ci] Auto-generated missing thumbnails" -a || exit 0
           git push -f -q https://${{secrets.PAT_TOKEN}}@github.com/${{github.repository}}
