@@ -104,6 +104,12 @@ jobs:
       - name: Debug - List directory contents
         run: ls -R ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails
 
+      - name: Upload Thumbnails
+        uses: actions/upload-artifact@v2
+        with:
+          name: thumbnails
+          path: ${{ matrix.folder }}/thumbnails
+
   commit-thumbnails:
     runs-on: ubuntu-latest
     needs: generate-thumbnails
@@ -111,12 +117,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Download Thumbnails
+        uses: actions/download-artifact@v2
+        with:
+          name: thumbnails
+          path: .
+
       - name: Commit thumbnail folder
         run: |
-          echo "Committing folder ${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails"
+          echo "Committing folder thumbnails"
           git config --local user.name "${{github.actor}}"
           git config --local user.email "${{github.actor}}@users.noreply.github.com"
-          git add "${GITHUB_WORKSPACE}/${{ matrix.folder }}/thumbnails" || exit 0
+          git add thumbnails || exit 0
           git status
           git commit -m "[skip ci] Auto-generated missing thumbnails" -a || exit 0
           git push -f -q https://${{secrets.PAT_TOKEN}}@github.com/${{github.repository}}
