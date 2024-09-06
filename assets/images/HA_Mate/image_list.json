@@ -3,14 +3,14 @@
     {
       "width": 1000,
       "height": 698,
-      "path": "../assets/images/HA_Mate/ha-mate.png"
+      "path": "ha-mate.png"
     }
   ],
   "image_list.json": [
     {
       "width": null,
       "height": null,
-      "path": "../assets/images/HA_Mate/image_list.json"
+      "path": "image_list.json"
     }
   ]
 }

@@ -3,63 +3,63 @@
     {
       "width": 500,
       "height": 572,
-      "path": "../assets/images/Plant-database/thumbnails/500/Anthurium_Lilly.png"
+      "path": "Anthurium_Lilly.png"
     }
   ],
   "Anthurium_Zizou.png": [
     {
       "width": 500,
       "height": 636,
-      "path": "../assets/images/Plant-database/thumbnails/500/Anthurium_Zizou.png"
+      "path": "Anthurium_Zizou.png"
     }
   ],
   "Ctenanthe_Burle_Marxii.png": [
     {
       "width": 500,
       "height": 557,
-      "path": "../assets/images/Plant-database/thumbnails/500/Ctenanthe_Burle_Marxii.png"
+      "path": "Ctenanthe_Burle_Marxii.png"
     }
   ],
   "Dieffenbachia_Compacta.png": [
     {
       "width": 500,
       "height": 500,
-      "path": "../assets/images/Plant-database/thumbnails/500/Dieffenbachia_Compacta.png"
+      "path": "Dieffenbachia_Compacta.png"
     }
   ],
   "Maranta_Leuconeura.png": [
     {
       "width": 500,
       "height": 355,
-      "path": "../assets/images/Plant-database/thumbnails/500/Maranta_Leuconeura.png"
+      "path": "Maranta_Leuconeura.png"
     }
   ],
   "Monstera_ob_Monkey_Mask.png": [
     {
       "width": 500,
       "height": 466,
-      "path": "../assets/images/Plant-database/thumbnails/500/Monstera_ob_Monkey_Mask.png"
+      "path": "Monstera_ob_Monkey_Mask.png"
     }
   ],
   "Philodendron_White_Measure.png": [
     {
       "width": 500,
       "height": 625,
-      "path": "../assets/images/Plant-database/thumbnails/500/Philodendron_White_Measure.png"
+      "path": "Philodendron_White_Measure.png"
     }
   ],
   "Scindapsus_pictus_Trebie.png": [
     {
       "width": 500,
       "height": 520,
-      "path": "../assets/images/Plant-database/thumbnails/500/Scindapsus_pictus_Trebie.png"
+      "path": "Scindapsus_pictus_Trebie.png"
     }
   ],
   "image_list.json": [
     {
       "width": null,
       "height": null,
-      "path": "../assets/images/Plant-database/thumbnails/500/image_list.json"
+      "path": "image_list.json"
     }
   ]
 }

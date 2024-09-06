@@ -1,6 +1,7 @@
 require 'liquid'
 require 'json'
 require 'nokogiri'
+require 'pathname'
 
 # Define the custom tag
 module Jekyll
@@ -23,12 +24,16 @@ module Jekyll
             # Find the image data for the specified image name
             image_data = json_data[@image_name]
 
+            directory_path = File.dirname(@json_file) + '/'
             # Generate the srcset attribute
-            srcset = image_data.map { |img| "#{img['path']} #{img['width']}w" }.join(', ')
+            srcset = image_data.map { |img| "#{directory_path}#{img['path']} #{img['width']}w" }.join(', ')
             # Get the largest image for the src attribute
+            
             largest_image = image_data.max_by { |img| img['width'] }
+            largest_image_path = directory_path + largest_image['path']
             #kramdown interprets tabs as code blocks, so to make this work, only spaces are used:
             puts "largest_image: #{largest_image['path']}"
+            puts "largest_image_path: #{largest_image_path}"
             <<-HTML
 <style>
     .modal {
@@ -77,7 +82,7 @@ module Jekyll
     }
 </style>
 <img 
-    src="#{largest_image['path']}"
+    src="#{largest_image_path}"
     srcset="#{srcset}"
     sizes="(max-width: 600px) #{@view_width_mobile}vw, #{@view_width_desktop}vw"
     alt="#{@alt_text}"
@@ -85,7 +90,7 @@ module Jekyll
     onclick="openModal('#{modal_id}', '#{@image_name}')"/>
 <div id="#{modal_id}" class="modal" onclick="this.style.display='none'">
     <span class="close" onclick="document.getElementById('#{modal_id}').style.display='none'">×</span>
-    <img class="modal-content" id="img_#{modal_id}" src="#{largest_image['path']}" onclick="event.stopPropagation()">
+    <img class="modal-content" id="img_#{modal_id}" src="#{largest_image_path}" onclick="event.stopPropagation()">
 </div>
 <script>
     async function openModal(modalId, initialPath) {
@@ -96,7 +101,6 @@ module Jekyll
     let fileName = initialPath.split('/').pop();
     let imagePath = await findFittingImage(fileName, screenWidth, screenHeight);
     if (imagePath) {
-        console.log(imagePath);
         imgElement.src = imagePath;
         modal.style.display = 'flex';
     } else {
@@ -105,7 +109,6 @@ module Jekyll
     }
 
     async function findFittingImage(fileName, screenWidth, screenHeight) {
-        console.log(screenWidth);
         try {
             const response = await fetch('#{@json_file}');
             if (!response.ok) {
@@ -121,12 +124,12 @@ module Jekyll
             images[fileName].forEach(image => {
             if (image.width <= screenWidth && image.height <= screenHeight) {
                 if (!fittingImage || (image.width > fittingImage.width && image.height > fittingImage.height)) {
-                fittingImage = image;
+                    fittingImage = image;
                 }
             }
             });
-
-            return fittingImage ? fittingImage.path : null;
+            const directoryPath = '#{@json_file}'.substring(0, '#{@json_file}'.lastIndexOf('/'));
+            return fittingImage ? directoryPath+ '/' + fittingImage.path : null;
         } catch (error) {
             console.error("Unable to fetch data:", error);
             return null;

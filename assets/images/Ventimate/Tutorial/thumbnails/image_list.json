@@ -3,929 +3,929 @@
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/1-table.jpg"
+      "path": "100/1-table.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/1-table.jpg"
+      "path": "300/1-table.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/1-table.jpg"
+      "path": "500/1-table.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/1-table.jpg"
+      "path": "750/1-table.jpg"
     }
   ],
   "1-table.png": [
     {
       "width": 100,
       "height": 56,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/1-table.png"
+      "path": "100/1-table.png"
     },
     {
       "width": 300,
       "height": 169,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/1-table.png"
+      "path": "300/1-table.png"
     },
     {
       "width": 500,
       "height": 281,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/1-table.png"
+      "path": "500/1-table.png"
     },
     {
       "width": 750,
       "height": 422,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/1-table.png"
+      "path": "750/1-table.png"
     }
   ],
   "10-check_magnet_polarity.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/10-check_magnet_polarity.jpg"
+      "path": "100/10-check_magnet_polarity.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/10-check_magnet_polarity.jpg"
+      "path": "300/10-check_magnet_polarity.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/10-check_magnet_polarity.jpg"
+      "path": "500/10-check_magnet_polarity.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/10-check_magnet_polarity.jpg"
+      "path": "750/10-check_magnet_polarity.jpg"
     }
   ],
   "10-check_magnet_polarity.png": [
     {
       "width": 100,
       "height": 100,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/10-check_magnet_polarity.png"
+      "path": "100/10-check_magnet_polarity.png"
     },
     {
       "width": 300,
       "height": 300,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/10-check_magnet_polarity.png"
+      "path": "300/10-check_magnet_polarity.png"
     },
     {
       "width": 500,
       "height": 500,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/10-check_magnet_polarity.png"
+      "path": "500/10-check_magnet_polarity.png"
     },
     {
       "width": 750,
       "height": 750,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/10-check_magnet_polarity.png"
+      "path": "750/10-check_magnet_polarity.png"
     }
   ],
   "11-glue_filter_guides.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/11-glue_filter_guides.jpg"
+      "path": "100/11-glue_filter_guides.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/11-glue_filter_guides.jpg"
+      "path": "300/11-glue_filter_guides.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/11-glue_filter_guides.jpg"
+      "path": "500/11-glue_filter_guides.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/11-glue_filter_guides.jpg"
+      "path": "750/11-glue_filter_guides.jpg"
     }
   ],
   "11-glue_filter_guides.png": [
     {
       "width": 100,
       "height": 100,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/11-glue_filter_guides.png"
+      "path": "100/11-glue_filter_guides.png"
     },
     {
       "width": 300,
       "height": 300,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/11-glue_filter_guides.png"
+      "path": "300/11-glue_filter_guides.png"
     },
     {
       "width": 500,
       "height": 500,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/11-glue_filter_guides.png"
+      "path": "500/11-glue_filter_guides.png"
     },
     {
       "width": 750,
       "height": 750,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/11-glue_filter_guides.png"
+      "path": "750/11-glue_filter_guides.png"
     }
   ],
   "12-glue_sides.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/12-glue_sides.jpg"
+      "path": "100/12-glue_sides.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/12-glue_sides.jpg"
+      "path": "300/12-glue_sides.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/12-glue_sides.jpg"
+      "path": "500/12-glue_sides.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/12-glue_sides.jpg"
+      "path": "750/12-glue_sides.jpg"
     }
   ],
   "12-glue_sides.png": [
     {
       "width": 100,
       "height": 100,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/12-glue_sides.png"
+      "path": "100/12-glue_sides.png"
     },
     {
       "width": 300,
       "height": 300,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/12-glue_sides.png"
+      "path": "300/12-glue_sides.png"
     },
     {
       "width": 500,
       "height": 500,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/12-glue_sides.png"
+      "path": "500/12-glue_sides.png"
     },
     {
       "width": 750,
       "height": 750,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/12-glue_sides.png"
+      "path": "750/12-glue_sides.png"
     }
   ],
   "13-apply_leds.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/13-apply_leds.jpg"
+      "path": "100/13-apply_leds.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/13-apply_leds.jpg"
+      "path": "300/13-apply_leds.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/13-apply_leds.jpg"
+      "path": "500/13-apply_leds.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/13-apply_leds.jpg"
+      "path": "750/13-apply_leds.jpg"
     }
   ],
   "13-apply_leds.png": [
     {
       "width": 100,
       "height": 112,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/13-apply_leds.png"
+      "path": "100/13-apply_leds.png"
     },
     {
       "width": 300,
       "height": 337,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/13-apply_leds.png"
+      "path": "300/13-apply_leds.png"
     },
     {
       "width": 500,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/13-apply_leds.png"
+      "path": "500/13-apply_leds.png"
     },
     {
       "width": 750,
       "height": 844,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/13-apply_leds.png"
+      "path": "750/13-apply_leds.png"
     }
   ],
   "14-wire_length_1.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/14-wire_length_1.jpg"
+      "path": "100/14-wire_length_1.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/14-wire_length_1.jpg"
+      "path": "300/14-wire_length_1.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/14-wire_length_1.jpg"
+      "path": "500/14-wire_length_1.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/14-wire_length_1.jpg"
+      "path": "750/14-wire_length_1.jpg"
     }
   ],
   "15-wire_length_2.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/15-wire_length_2.jpg"
+      "path": "100/15-wire_length_2.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/15-wire_length_2.jpg"
+      "path": "300/15-wire_length_2.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/15-wire_length_2.jpg"
+      "path": "500/15-wire_length_2.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/15-wire_length_2.jpg"
+      "path": "750/15-wire_length_2.jpg"
     }
   ],
   "16-led_wiring_result.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/16-led_wiring_result.jpg"
+      "path": "100/16-led_wiring_result.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/16-led_wiring_result.jpg"
+      "path": "300/16-led_wiring_result.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/16-led_wiring_result.jpg"
+      "path": "500/16-led_wiring_result.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/16-led_wiring_result.jpg"
+      "path": "750/16-led_wiring_result.jpg"
     }
   ],
   "17-glue_sides_result.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/17-glue_sides_result.jpg"
+      "path": "100/17-glue_sides_result.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/17-glue_sides_result.jpg"
+      "path": "300/17-glue_sides_result.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/17-glue_sides_result.jpg"
+      "path": "500/17-glue_sides_result.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/17-glue_sides_result.jpg"
+      "path": "750/17-glue_sides_result.jpg"
     }
   ],
   "18-insert_middle_1.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/18-insert_middle_1.jpg"
+      "path": "100/18-insert_middle_1.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/18-insert_middle_1.jpg"
+      "path": "300/18-insert_middle_1.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/18-insert_middle_1.jpg"
+      "path": "500/18-insert_middle_1.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/18-insert_middle_1.jpg"
+      "path": "750/18-insert_middle_1.jpg"
     }
   ],
   "19-insert_middle_2.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/19-insert_middle_2.jpg"
+      "path": "100/19-insert_middle_2.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/19-insert_middle_2.jpg"
+      "path": "300/19-insert_middle_2.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/19-insert_middle_2.jpg"
+      "path": "500/19-insert_middle_2.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/19-insert_middle_2.jpg"
+      "path": "750/19-insert_middle_2.jpg"
     }
   ],
   "2-table_cloth.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/2-table_cloth.jpg"
+      "path": "100/2-table_cloth.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/2-table_cloth.jpg"
+      "path": "300/2-table_cloth.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/2-table_cloth.jpg"
+      "path": "500/2-table_cloth.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/2-table_cloth.jpg"
+      "path": "750/2-table_cloth.jpg"
     }
   ],
   "2-table_cloth.png": [
     {
       "width": 100,
       "height": 56,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/2-table_cloth.png"
+      "path": "100/2-table_cloth.png"
     },
     {
       "width": 300,
       "height": 169,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/2-table_cloth.png"
+      "path": "300/2-table_cloth.png"
     },
     {
       "width": 500,
       "height": 281,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/2-table_cloth.png"
+      "path": "500/2-table_cloth.png"
     },
     {
       "width": 750,
       "height": 422,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/2-table_cloth.png"
+      "path": "750/2-table_cloth.png"
     }
   ],
   "20-insert_middle_3.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/20-insert_middle_3.jpg"
+      "path": "100/20-insert_middle_3.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/20-insert_middle_3.jpg"
+      "path": "300/20-insert_middle_3.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/20-insert_middle_3.jpg"
+      "path": "500/20-insert_middle_3.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/20-insert_middle_3.jpg"
+      "path": "750/20-insert_middle_3.jpg"
     }
   ],
   "21-insert_middle_4.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/21-insert_middle_4.jpg"
+      "path": "100/21-insert_middle_4.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/21-insert_middle_4.jpg"
+      "path": "300/21-insert_middle_4.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/21-insert_middle_4.jpg"
+      "path": "500/21-insert_middle_4.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/21-insert_middle_4.jpg"
+      "path": "750/21-insert_middle_4.jpg"
     }
   ],
   "22-tie_wraps_1.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/22-tie_wraps_1.jpg"
+      "path": "100/22-tie_wraps_1.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/22-tie_wraps_1.jpg"
+      "path": "300/22-tie_wraps_1.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/22-tie_wraps_1.jpg"
+      "path": "500/22-tie_wraps_1.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/22-tie_wraps_1.jpg"
+      "path": "750/22-tie_wraps_1.jpg"
     }
   ],
   "23-tie_wraps_2.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/23-tie_wraps_2.jpg"
+      "path": "100/23-tie_wraps_2.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/23-tie_wraps_2.jpg"
+      "path": "300/23-tie_wraps_2.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/23-tie_wraps_2.jpg"
+      "path": "500/23-tie_wraps_2.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/23-tie_wraps_2.jpg"
+      "path": "750/23-tie_wraps_2.jpg"
     }
   ],
   "24-insert_fan.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/24-insert_fan.jpg"
+      "path": "100/24-insert_fan.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/24-insert_fan.jpg"
+      "path": "300/24-insert_fan.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/24-insert_fan.jpg"
+      "path": "500/24-insert_fan.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/24-insert_fan.jpg"
+      "path": "750/24-insert_fan.jpg"
     }
   ],
   "25-insert_wire_terminals.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/25-insert_wire_terminals.jpg"
+      "path": "100/25-insert_wire_terminals.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/25-insert_wire_terminals.jpg"
+      "path": "300/25-insert_wire_terminals.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/25-insert_wire_terminals.jpg"
+      "path": "500/25-insert_wire_terminals.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/25-insert_wire_terminals.jpg"
+      "path": "750/25-insert_wire_terminals.jpg"
     }
   ],
   "26-insert_pm_sensor.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/26-insert_pm_sensor.jpg"
+      "path": "100/26-insert_pm_sensor.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/26-insert_pm_sensor.jpg"
+      "path": "300/26-insert_pm_sensor.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/26-insert_pm_sensor.jpg"
+      "path": "500/26-insert_pm_sensor.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/26-insert_pm_sensor.jpg"
+      "path": "750/26-insert_pm_sensor.jpg"
     }
   ],
   "27-insert_BM680.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/27-insert_BM680.jpg"
+      "path": "100/27-insert_BM680.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/27-insert_BM680.jpg"
+      "path": "300/27-insert_BM680.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/27-insert_BM680.jpg"
+      "path": "500/27-insert_BM680.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/27-insert_BM680.jpg"
+      "path": "750/27-insert_BM680.jpg"
     }
   ],
   "28-check_pcb_alignment.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/28-check_pcb_alignment.jpg"
+      "path": "100/28-check_pcb_alignment.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/28-check_pcb_alignment.jpg"
+      "path": "300/28-check_pcb_alignment.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/28-check_pcb_alignment.jpg"
+      "path": "500/28-check_pcb_alignment.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/28-check_pcb_alignment.jpg"
+      "path": "750/28-check_pcb_alignment.jpg"
     }
   ],
   "3-overview_parts.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/3-overview_parts.jpg"
+      "path": "100/3-overview_parts.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/3-overview_parts.jpg"
+      "path": "300/3-overview_parts.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/3-overview_parts.jpg"
+      "path": "500/3-overview_parts.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/3-overview_parts.jpg"
+      "path": "750/3-overview_parts.jpg"
     }
   ],
   "3-overview_parts.png": [
     {
       "width": 100,
       "height": 56,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/3-overview_parts.png"
+      "path": "100/3-overview_parts.png"
     },
     {
       "width": 300,
       "height": 169,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/3-overview_parts.png"
+      "path": "300/3-overview_parts.png"
     },
     {
       "width": 500,
       "height": 281,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/3-overview_parts.png"
+      "path": "500/3-overview_parts.png"
     },
     {
       "width": 750,
       "height": 422,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/3-overview_parts.png"
+      "path": "750/3-overview_parts.png"
     }
   ],
   "4-remaining_cuts.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/4-remaining_cuts.jpg"
+      "path": "100/4-remaining_cuts.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/4-remaining_cuts.jpg"
+      "path": "300/4-remaining_cuts.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/4-remaining_cuts.jpg"
+      "path": "500/4-remaining_cuts.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/4-remaining_cuts.jpg"
+      "path": "750/4-remaining_cuts.jpg"
     }
   ],
   "4-remaining_cuts.png": [
     {
       "width": 100,
       "height": 56,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/4-remaining_cuts.png"
+      "path": "100/4-remaining_cuts.png"
     },
     {
       "width": 300,
       "height": 169,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/4-remaining_cuts.png"
+      "path": "300/4-remaining_cuts.png"
     },
     {
       "width": 500,
       "height": 281,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/4-remaining_cuts.png"
+      "path": "500/4-remaining_cuts.png"
     },
     {
       "width": 750,
       "height": 422,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/4-remaining_cuts.png"
+      "path": "750/4-remaining_cuts.png"
     }
   ],
   "5-cleaning_brush.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/5-cleaning_brush.jpg"
+      "path": "100/5-cleaning_brush.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/5-cleaning_brush.jpg"
+      "path": "300/5-cleaning_brush.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/5-cleaning_brush.jpg"
+      "path": "500/5-cleaning_brush.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/5-cleaning_brush.jpg"
+      "path": "750/5-cleaning_brush.jpg"
     }
   ],
   "5-cleaning_brush.png": [
     {
       "width": 100,
       "height": 56,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/5-cleaning_brush.png"
+      "path": "100/5-cleaning_brush.png"
     },
     {
       "width": 300,
       "height": 169,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/5-cleaning_brush.png"
+      "path": "300/5-cleaning_brush.png"
     },
     {
       "width": 500,
       "height": 281,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/5-cleaning_brush.png"
+      "path": "500/5-cleaning_brush.png"
     },
     {
       "width": 750,
       "height": 422,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/5-cleaning_brush.png"
+      "path": "750/5-cleaning_brush.png"
     }
   ],
   "6-cleaning_cloth.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/6-cleaning_cloth.jpg"
+      "path": "100/6-cleaning_cloth.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/6-cleaning_cloth.jpg"
+      "path": "300/6-cleaning_cloth.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/6-cleaning_cloth.jpg"
+      "path": "500/6-cleaning_cloth.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/6-cleaning_cloth.jpg"
+      "path": "750/6-cleaning_cloth.jpg"
     }
   ],
   "6-cleaning_cloth.png": [
     {
       "width": 100,
       "height": 56,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/6-cleaning_cloth.png"
+      "path": "100/6-cleaning_cloth.png"
     },
     {
       "width": 300,
       "height": 169,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/6-cleaning_cloth.png"
+      "path": "300/6-cleaning_cloth.png"
     },
     {
       "width": 500,
       "height": 281,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/6-cleaning_cloth.png"
+      "path": "500/6-cleaning_cloth.png"
     },
     {
       "width": 750,
       "height": 422,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/6-cleaning_cloth.png"
+      "path": "750/6-cleaning_cloth.png"
     }
   ],
   "7-apply_varnish.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/7-apply_varnish.jpg"
+      "path": "100/7-apply_varnish.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/7-apply_varnish.jpg"
+      "path": "300/7-apply_varnish.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/7-apply_varnish.jpg"
+      "path": "500/7-apply_varnish.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/7-apply_varnish.jpg"
+      "path": "750/7-apply_varnish.jpg"
     }
   ],
   "7-apply_varnish.png": [
     {
       "width": 100,
       "height": 56,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/7-apply_varnish.png"
+      "path": "100/7-apply_varnish.png"
     },
     {
       "width": 300,
       "height": 169,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/7-apply_varnish.png"
+      "path": "300/7-apply_varnish.png"
     },
     {
       "width": 500,
       "height": 281,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/7-apply_varnish.png"
+      "path": "500/7-apply_varnish.png"
     },
     {
       "width": 750,
       "height": 422,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/7-apply_varnish.png"
+      "path": "750/7-apply_varnish.png"
     }
   ],
   "8-varnish_result.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/8-varnish_result.jpg"
+      "path": "100/8-varnish_result.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/8-varnish_result.jpg"
+      "path": "300/8-varnish_result.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/8-varnish_result.jpg"
+      "path": "500/8-varnish_result.jpg"
     },
     {
       "width": 750,
       "height": 563,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/8-varnish_result.jpg"
+      "path": "750/8-varnish_result.jpg"
     }
   ],
   "8-varnish_result.png": [
     {
       "width": 100,
       "height": 133,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/8-varnish_result.png"
+      "path": "100/8-varnish_result.png"
     },
     {
       "width": 300,
       "height": 400,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/8-varnish_result.png"
+      "path": "300/8-varnish_result.png"
     },
     {
       "width": 500,
       "height": 666,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/8-varnish_result.png"
+      "path": "500/8-varnish_result.png"
     },
     {
       "width": 750,
       "height": 1000,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/8-varnish_result.png"
+      "path": "750/8-varnish_result.png"
     }
   ],
   "9-put_magnets.jpg": [
     {
       "width": 100,
       "height": 75,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/9-put_magnets.jpg"
+      "path": "100/9-put_magnets.jpg"
     },
     {
       "width": 300,
       "height": 225,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/9-put_magnets.jpg"
+      "path": "300/9-put_magnets.jpg"
     },
     {
       "width": 500,
       "height": 375,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/9-put_magnets.jpg"
+      "path": "500/9-put_magnets.jpg"
     },
     {
       "width": 750,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/9-put_magnets.jpg"
+      "path": "750/9-put_magnets.jpg"
     }
   ],
   "9-put_magnets.png": [
     {
       "width": 100,
       "height": 112,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/9-put_magnets.png"
+      "path": "100/9-put_magnets.png"
     },
     {
       "width": 300,
       "height": 337,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/9-put_magnets.png"
+      "path": "300/9-put_magnets.png"
     },
     {
       "width": 500,
       "height": 562,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/9-put_magnets.png"
+      "path": "500/9-put_magnets.png"
     },
     {
       "width": 750,
       "height": 844,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/9-put_magnets.png"
+      "path": "750/9-put_magnets.png"
     }
   ],
   "image_list.json": [
     {
       "width": null,
       "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/image_list.json"
+      "path": "100/image_list.json"
     },
     {
       "width": null,
       "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/image_list.json"
+      "path": "300/image_list.json"
     },
     {
       "width": null,
       "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/image_list.json"
+      "path": "500/image_list.json"
     },
     {
       "width": null,
       "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/image_list.json"
+      "path": "750/image_list.json"
     },
     {
       "width": null,
       "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/image_list.json"
+      "path": "image_list.json"
     }
   ]
 }
