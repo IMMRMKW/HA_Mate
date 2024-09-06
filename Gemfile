@@ -12,3 +12,5 @@ gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'webrick', '>=1.7'
 gem 'liquid', "~> 4.0"
 gem 'fastimage', '~> 2.2.5'
+gem 'nokogiri', '~> 1.16', '>= 1.16.6'
+

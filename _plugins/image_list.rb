@@ -32,8 +32,10 @@ module Jekyll
         # Ensure the directory exists
         FileUtils.mkdir_p(File.dirname(output_file))
 
-        File.write(output_file, JSON.pretty_generate(image_list))
-        site.static_files << Jekyll::StaticFile.new(site, site.source, Pathname.new(subfolder).relative_path_from(Pathname.new(site.source)).to_s, 'image_list.json')
+        File.open(output_file, 'w') do |file|
+            file.write(JSON.pretty_generate(image_list))
+        end
+        #site.static_files << Jekyll::StaticFile.new(site, site.source, Pathname.new(subfolder).relative_path_from(Pathname.new(site.source)).to_s, 'image_list.json')
       end
     end
   end

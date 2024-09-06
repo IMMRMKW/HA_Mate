@@ -1,4 +1,88 @@
 {
+  "ha-mate.png": [
+    {
+      "width": 1000,
+      "height": 698,
+      "path": "../assets/images/HA_Mate/ha-mate.png"
+    }
+  ],
+  "image_list.json": [
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/HA_Mate/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/thumbnails/100/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/thumbnails/300/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/thumbnails/500/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/thumbnails/750/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Plant-database/thumbnails/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Ventimate/Tutorial/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/Ventimate/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "../assets/images/image_list.json"
+    }
+  ],
   "Anthurium_Lilly.png": [
     {
       "width": 921,
@@ -213,78 +297,6 @@
       "width": 750,
       "height": 780,
       "path": "../assets/images/Plant-database/thumbnails/750/Scindapsus_pictus_Trebie.png"
-    }
-  ],
-  "image_list.json": [
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Plant-database/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Plant-database/thumbnails/100/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Plant-database/thumbnails/300/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Plant-database/thumbnails/500/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Plant-database/thumbnails/750/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Plant-database/thumbnails/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/300/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/500/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/750/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Ventimate/Tutorial/thumbnails/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/Ventimate/image_list.json"
-    },
-    {
-      "width": null,
-      "height": null,
-      "path": "../assets/images/image_list.json"
     }
   ],
   "1-table.jpg": [
