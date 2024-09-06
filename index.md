@@ -4,7 +4,7 @@ title: Home Automation Mate landing page
 ---
 
 # Home Automation Mate
-This is the landing page for the Home Automation Mate; your friend when it comes to automating a variety of things in your house. Quickly check out the projects in the bar on the left to see the possibilities or be creative, and think of your own!
+This is the landing page for the Home Automation Mate; your friend when it comes to automating a variety of things in your house. Quickly check out the projects in the bar on the left to see possible projects or be creative, and think of your own!
 
 {% image_tag ./assets/images/HA_Mate/image_list.json,ha-mate.png, HA Mate, 25, 90 %}
 
@@ -48,7 +48,7 @@ You can contact me via the following form for more information or to order the b
             border-radius: 5px;
         }
         input[type="submit"] {
-            background-color: #4CAF50;
+            background-color: #008CBA;
             color: white;
             border: none;
             cursor: pointer;
@@ -60,7 +60,7 @@ You can contact me via the following form for more information or to order the b
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("YOUR_PUBLIC_KEY");
+            emailjs.init("DYJ-ABUzYg0M9QyQQ");
         })();
     </script>
 </head>
@@ -68,7 +68,7 @@ You can contact me via the following form for more information or to order the b
     <div class="container">
         <form id="contact-form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" required>
+            <input type="text" id="name" name="from_name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="user_email" required>
             <label for="message">Message:</label>
@@ -81,7 +81,7 @@ You can contact me via the following form for more information or to order the b
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
-                emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                emailjs.sendForm('service_5aemcbd', 'template_d8qob78', this)
                     .then(function() {
                         alert('SUCCESS!');
                     }, function(error) {

@@ -83,7 +83,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        folder: ['assets/images/Plant-database', 'assets/images/Ventimate/Tutorial']
+        folder: ['assets/images/Plant-database', 'assets/images/Ventimate/Tutorial', 'assets/images/HA_Mate']
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
