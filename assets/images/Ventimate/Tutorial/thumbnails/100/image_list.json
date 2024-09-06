@@ -6,11 +6,25 @@
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/1-table.jpg"
     }
   ],
+  "1-table.png": [
+    {
+      "width": 100,
+      "height": 56,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/1-table.png"
+    }
+  ],
   "10-check_magnet_polarity.jpg": [
     {
       "width": 100,
       "height": 75,
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/10-check_magnet_polarity.jpg"
+    }
+  ],
+  "10-check_magnet_polarity.png": [
+    {
+      "width": 100,
+      "height": 100,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/10-check_magnet_polarity.png"
     }
   ],
   "11-glue_filter_guides.jpg": [
@@ -20,6 +34,13 @@
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/11-glue_filter_guides.jpg"
     }
   ],
+  "11-glue_filter_guides.png": [
+    {
+      "width": 100,
+      "height": 100,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/11-glue_filter_guides.png"
+    }
+  ],
   "12-glue_sides.jpg": [
     {
       "width": 100,
@@ -27,11 +48,25 @@
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/12-glue_sides.jpg"
     }
   ],
+  "12-glue_sides.png": [
+    {
+      "width": 100,
+      "height": 100,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/12-glue_sides.png"
+    }
+  ],
   "13-apply_leds.jpg": [
     {
       "width": 100,
       "height": 75,
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/13-apply_leds.jpg"
+    }
+  ],
+  "13-apply_leds.png": [
+    {
+      "width": 100,
+      "height": 112,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/13-apply_leds.png"
     }
   ],
   "14-wire_length_1.jpg": [
@@ -81,6 +116,13 @@
       "width": 100,
       "height": 75,
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/2-table_cloth.jpg"
+    }
+  ],
+  "2-table_cloth.png": [
+    {
+      "width": 100,
+      "height": 56,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/2-table_cloth.png"
     }
   ],
   "20-insert_middle_3.jpg": [
@@ -153,11 +195,25 @@
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/3-overview_parts.jpg"
     }
   ],
+  "3-overview_parts.png": [
+    {
+      "width": 100,
+      "height": 56,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/3-overview_parts.png"
+    }
+  ],
   "4-remaining_cuts.jpg": [
     {
       "width": 100,
       "height": 75,
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/4-remaining_cuts.jpg"
+    }
+  ],
+  "4-remaining_cuts.png": [
+    {
+      "width": 100,
+      "height": 56,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/4-remaining_cuts.png"
     }
   ],
   "5-cleaning_brush.jpg": [
@@ -167,11 +223,25 @@
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/5-cleaning_brush.jpg"
     }
   ],
+  "5-cleaning_brush.png": [
+    {
+      "width": 100,
+      "height": 56,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/5-cleaning_brush.png"
+    }
+  ],
   "6-cleaning_cloth.jpg": [
     {
       "width": 100,
       "height": 75,
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/6-cleaning_cloth.jpg"
+    }
+  ],
+  "6-cleaning_cloth.png": [
+    {
+      "width": 100,
+      "height": 56,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/6-cleaning_cloth.png"
     }
   ],
   "7-apply_varnish.jpg": [
@@ -181,6 +251,13 @@
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/7-apply_varnish.jpg"
     }
   ],
+  "7-apply_varnish.png": [
+    {
+      "width": 100,
+      "height": 56,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/7-apply_varnish.png"
+    }
+  ],
   "8-varnish_result.jpg": [
     {
       "width": 100,
@@ -188,11 +265,25 @@
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/8-varnish_result.jpg"
     }
   ],
+  "8-varnish_result.png": [
+    {
+      "width": 100,
+      "height": 133,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/8-varnish_result.png"
+    }
+  ],
   "9-put_magnets.jpg": [
     {
       "width": 100,
       "height": 75,
       "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/9-put_magnets.jpg"
+    }
+  ],
+  "9-put_magnets.png": [
+    {
+      "width": 100,
+      "height": 112,
+      "path": "../assets/images/Ventimate/Tutorial/thumbnails/100/9-put_magnets.png"
     }
   ],
   "image_list.json": [
