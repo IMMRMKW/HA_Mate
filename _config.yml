@@ -50,7 +50,7 @@ collections_dir: _collections
 collections:
   chapters:
     output: true
-    permalink: /:path
+    permalink: /HA_Mate/:path
 
 # Use front matter defaults to supply the metadata for each chapter
 defaults:

@@ -1,0 +1,16 @@
+{
+  "ha-mate.png": [
+    {
+      "width": 100,
+      "height": 70,
+      "path": "ha-mate.png"
+    }
+  ],
+  "image_list.json": [
+    {
+      "width": null,
+      "height": null,
+      "path": "image_list.json"
+    }
+  ]
+}

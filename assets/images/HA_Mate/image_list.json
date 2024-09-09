@@ -4,6 +4,26 @@
       "width": 1000,
       "height": 698,
       "path": "ha-mate.png"
+    },
+    {
+      "width": 100,
+      "height": 70,
+      "path": "thumbnails/100/ha-mate.png"
+    },
+    {
+      "width": 300,
+      "height": 209,
+      "path": "thumbnails/300/ha-mate.png"
+    },
+    {
+      "width": 500,
+      "height": 349,
+      "path": "thumbnails/500/ha-mate.png"
+    },
+    {
+      "width": 750,
+      "height": 524,
+      "path": "thumbnails/750/ha-mate.png"
     }
   ],
   "image_list.json": [
@@ -11,6 +31,31 @@
       "width": null,
       "height": null,
       "path": "image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "thumbnails/100/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "thumbnails/300/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "thumbnails/500/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "thumbnails/750/image_list.json"
+    },
+    {
+      "width": null,
+      "height": null,
+      "path": "thumbnails/image_list.json"
     }
   ]
 }

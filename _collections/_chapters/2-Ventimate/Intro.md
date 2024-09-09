@@ -24,7 +24,7 @@ We spend much of our time indoors. Maintaining good air quality inside your home
 
 ## User experiences
 <img 
-    src="..\assets\images\chatgpt.svg" 
+    src="..\..\assets\images\chatgpt.svg" 
     alt="drawing" 
     sizes="(max-width: 600px) 100vw,
             50vw"
